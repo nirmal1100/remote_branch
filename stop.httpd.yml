@@ -1,0 +1,8 @@
+---
+- name: apache service
+  hosts: all
+  tasks: 
+    - name: stop service
+      service:
+        name: httpd
+        state: stopped
